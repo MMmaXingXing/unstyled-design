@@ -1,7 +1,9 @@
-<script setup>
-import ButtonProps from "./button.type.ts";
+<script setup lang="ts">
+interface ButtonProps {
+  text: string
+}
 
-withDefaults(defineProps<ButtonProps>({}), {});
+withDefaults(defineProps<ButtonProps>(), {text: ''});
 </script>
 
 <template>
